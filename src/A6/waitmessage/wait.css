@@ -1,0 +1,94 @@
+.home_wait_item{
+   margin:0 auto;
+  width:94%;
+  height:120px;
+  background-color:#ffffff;
+  border-radius:15px;
+  border-style:solid;
+  border-color:transparent;
+  box-shadow:1px 1px 1px 1px rgb(228, 222, 222);
+  display:flex;
+  margin-bottom:30px;
+}
+.home_white_item{
+    color:transparent;
+    height:30px;
+    /* background-color:red; */
+}
+.item_picture{
+   width:150px;
+   height:100%;
+   border-radius:15px;
+}
+.item_title{
+    width:500px;
+    font-size:20px;
+    display:flex;
+    padding-left:15px;
+    padding-top:15px;
+    flex-direction:column;
+}
+.item_infor{
+    /* background-color:#B8C891; */
+    width:120px;
+    margin-right:100px;
+    height:30px;
+    position:relative;
+    left:-120px;
+    top:75px;
+    border-radius:10px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+    font-size:20px;
+}
+.item_status{
+    width:200px;
+}
+.item_status_button{
+    position:relative;
+    text-align:center;
+    width:80%;
+    margin:0 auto;
+    left:60px;
+    height:50px;
+    border-radius:15px;
+    color:white;
+    line-height:50px;
+    font-size:23px;
+    font-weight:bold;
+    letter-spacing:5px;
+    top:25%;
+    transition: 0.5s;
+    background-color:#f4cac3;
+}
+.item_status_button:hover{
+    /* transform: scale(1.1); */
+    cursor:pointer;
+    background-color:#dd8f8d;
+    transition: 0.5s;
+}
+
+.item_status_button2{
+    position:relative;
+    text-align:center;
+    width:80%;
+    margin:0 auto;
+    left:60px;
+    height:50px;
+    border-radius:15px;
+    color:white;
+    line-height:50px;
+    font-size:23px;
+    font-weight:bold;
+    letter-spacing:5px;
+    top:25%;
+    transition: 0.5s;
+    background-color:#c3d696;
+}
+.item_status_button2:hover{
+
+    background-color:#9fa77e;
+}
+
+/* 未审核 */

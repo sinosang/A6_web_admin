@@ -1,0 +1,256 @@
+/* login */
+@font-face {
+    font-family:'pinfang';
+    src:url('../../assets/ziti/苹方黑体-准-简.ttf')
+  }
+  /* div {
+    font-family:pinfang;
+  } */
+.login_page {
+    background: url(../../assets/image/girl.jpg);
+    background-size: 100%;
+    width: 100%;
+    /* 频幕可见高度 */
+    min-height: 100vh;
+
+}
+
+.login {
+    margin: auto;
+    opacity:0.95;
+    background-color: #c3d696;
+    width: 80%;
+    position: relative;
+    top: 10vh;
+    /* min-height:80vh; */
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
+/* login_left */
+.login_left {
+    position: relative;
+    left: 15%;
+    width: 60%;
+    color: white;
+    /* background: url(../../assets/image/logo.png); */
+    /* background-color:white; */
+    height: 500px;
+}
+
+.login_left h1 {
+    position: relative;
+    left: -20%;
+    font-size: 45px;
+    color: white;
+}
+.login_left img {
+
+  width:auto;
+}
+.login_left_seTitle {
+    text-indent: 1em;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+#seT1 {
+    text-indent: 2em;
+    position: relative;
+    top:50px;
+    left: 5%;
+    font-size: 20px;
+}
+
+#seT2 {
+    text-indent: 8em;
+    position: relative;
+    left: 5%;
+    top:50px;
+    font-size: 20px;
+}
+
+.login_left img {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 300px;
+}
+
+/* login_right */
+.login_right {
+    /* background:url(../../assets/image/dusk.jpg); */
+    background-color: white;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    opacity: 0.9;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.login_title {
+    color:rgb(40, 84, 40);
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    position: relative;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 1px;
+}
+
+.login_setitle {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+}
+
+.login_setitle:before,
+.login_setitle:after {
+    content: "";
+    width: 35%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+}
+
+.login_setitle:before {
+    /* 线性渐变 */
+    background: -webkit-linear-gradient(right, #666, #eee);
+    background: -o-linear-gradient(left, #666, #eee);
+    background: -moz-linear-gradient(left, #666, #eee);
+    background: linear-gradient(to left, #666, #eee);
+    left: 3%;
+}
+
+.login_setitle:after {
+    background: -webkit-linear-gradient(left, #666, #eee);
+    background: -o-linear-gradient(right, #666, #eee);
+    background: -moz-linear-gradient(right, #666, #eee);
+    background: linear-gradient(to right, #666, #eee);
+    right: 3%;
+}
+
+.login_form {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height:200px;
+}
+
+.login_input {
+    width: 95%;
+    padding-top: 15px;
+    display: flex;
+    margin-left: 5%;
+}
+
+.login_input_title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.login_input_input {
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.input_type {
+    font-size: 18px;
+    height: 40px;
+}
+
+
+/* lg/re button */
+.login_right_bottom {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.login_right_button {
+    top: 25px;
+    width: 30%;
+    height: 50px;
+    color: white;
+    /* background-color:gray; */
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#login_right_button_lgsubmit {
+    background-color: #9fa77e;
+    position: relative;
+    margin-left: 10%;
+}
+
+#login_right_button_lgregister {
+    position: relative;
+    margin-left: 20%;
+    background-color: #c3d696;
+}
+
+#login_right_button_reback {
+    background-color: #9fa77e;
+    position: relative;
+    margin-left: 10%;
+}
+
+#login_right_button_register {
+    position: relative;
+    margin-left: 20%;
+    background-color: #c3d696;
+}
+
+.login_right_role{
+    width:100%;
+    position:relative;
+    top:70px;
+   text-align:center;
+}
+.login_right_forget{
+    position:absolute;
+    bottom:-105%;
+    right:5%;
+    color:blue;
+    cursor:pointer;
+ 
+}
+.login_right_about{
+    display:flex;
+    position:absolute;
+    bottom:-105%;
+    left:5%;
+    cursor:pointer;
+}
+.inputtest {
+    width: 65%;
+    height: 36px;
+    padding: 10px;
+    size: 14px;
+    line-height: 14px;
+    color: #333;
+    font-size: 20px;
+    background-color: transparent;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    cursor: text;
+    border-style: solid;
+    border-color: -webkit-linear-gradient(left, #666, #eee);
+    border-width: 0px;
+    border-bottom-width: 1px;
+}

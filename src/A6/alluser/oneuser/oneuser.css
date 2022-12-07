@@ -1,0 +1,165 @@
+/* information */
+.user_information {
+  width: 90%;
+  height: 260px;
+  margin: 0 auto;
+  margin-left: 7%;
+  background-color: white;
+}
+
+.information_head {
+  display: flex;
+  border-width: 1px;
+  border-color: transparent transparent transparent transparent;
+  border-bottom-color: rgb(125, 123, 123, 0.41);
+  border-style: solid;
+  height: 50px;
+  line-height: 50px;
+}
+
+.infor {
+  font-size: 23px;
+  color: #87858c;
+  position: relative;
+  left: 5%;
+}
+
+.delete {
+  top: 10px;
+  position: relative;
+  left: 72%;
+  font-size: 20px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  background-color: #a09fa0;
+  cursor: pointer;
+}
+
+.information_content {
+  display: flex;
+}
+
+.user_image {
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+
+.user_image img {
+  width: 80px;
+  height: 80px;
+  /* border-radius: 50%; */
+}
+
+.user_main {
+  position: relative;
+  top: 15px;
+  left: 55px;
+  color: #87858c;
+  font-size: 25px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* upload */
+.user_upload {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 7%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+}
+
+.user_upload img {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-right: 15px;
+  width: 220px;
+  height: 120px;
+  border-radius: 15px;
+}
+.user_upload video {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-right: 15px;
+  width: 220px;
+  height: 120px;
+  border-radius: 15px;
+}
+.user_upload_title {
+  width: 300px;
+  font-size: 18px;
+  color: #9fa77e;
+  margin-top: 25px;
+  margin-left: 15px;
+
+}
+
+.upload_title_data {
+  position: relative;
+  left: 5%;
+}
+
+.upload_title_data div {
+  margin-top: 15px;
+  font-size: 23px;
+}
+
+
+.user_upload_button {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  left: 40px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  line-height: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  top: 25%;
+  transition: 0.5s;
+  background-color: #f4cac3;
+}
+
+.user_upload_button:hover {
+  /* transform: scale(1.1); */
+  cursor: pointer;
+  background-color: #dd8f8d;
+  transition: 0.5s;
+}
+
+/* 未审核 */
+.user_upload_button2 {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  left: 40px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  line-height: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  top: 25%;
+  transition: 0.5s;
+  background-color: #c3d696;
+}
+
+.user_upload_button2:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #9fa77e;
+}
