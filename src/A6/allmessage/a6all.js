@@ -1,8 +1,10 @@
+
+import qs from 'qs';
 import axios from "axios";
 import { ref, onMounted, onUpdated, getCurrentInstance } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useStore } from "vuex";
-import { ElMessage, ElMessageBox } from "element-plus";
+import { ElMessage, ElMessageBox } from 'element-plus'
 export default {
     setup() {
         const route = useRoute();

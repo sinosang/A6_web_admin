@@ -8,14 +8,14 @@
     <img class="item_picture" :src="'http://120.78.147.187:80/'+item.img1.path" />
     <div class="item_title">
       <!-- <div>标题:{{user_title}}</div> -->
-      <div>标题:{{ item.id }}</div>
+      <div>标题:{{ item.title }}</div>
       <!-- <div style="margin-top:50px;">上传者:{{user_name}}</div>-->
-      <div style="margin-top: 20px">上传者id:{{ item.user }}</div>
+      <div style="margin-top: 20px">上传者id:{{ item.id }}</div>
     </div>
     <div class="item_infor"></div>
     <div class="item_status">
-      <div v-if="item.check==false" class="item_status_button">未审核</div>
-      <div v-else-if="item.check==true" class="item_status_button2">查看</div>
+      <div v-if="item.check==false" class="item_status_button" @click="getOneMessage(item.id)">未审核</div>
+      <div v-else-if="item.check==true" class="item_status_button2" @click="toshowArticle(item.id)">查看</div>
     </div>
      <!-- <p>图片:</p> -->
   </div>
@@ -54,18 +54,32 @@ export default {
               "/api/admin_search//?page=" + page.value + "&size=" + size.value+"&search="+getInput.value,
             })
                 .then(function (res) {     
+                  console.log(res)
                   searchData.value=res.data.data            
-                    console.log(res.data.data)
+                  console.log(res.data.data)
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
     }
-
-
+    function toshowArticle(itemid) {
+            console.log("show")
+            router.push({
+                path: '/a6home/showArticle',
+                query: { messageId: itemid }
+            })
+        }
+        function getOneMessage(itemid) {
+            console.log("getone")
+            router.push({
+                path: '/a6home/oneArticle',
+                query: { messageId: itemid }
+            })
+        }
     return {
-      searchData,
+      searchData,getOneMessage,
       showSearch,
+      toshowArticle,
       getInput,page,size,
     }
 
@@ -92,7 +106,7 @@ export default {
     border-radius:15px;
  }
  .item_title{
-     width:200px;
+     width:250px;
      font-size:20px;
      display:flex;
      padding-left:15px;
@@ -113,7 +127,7 @@ export default {
      text-align:center;
      width:80%;
      margin:0 auto;
-     left:60px;
+     left:0px;
      height:50px;
      border-radius:15px;
      color:white;
@@ -137,7 +151,7 @@ export default {
      text-align:center;
      width:80%;
      margin:0 auto;
-     left:60px;
+     left:0px;
      height:50px;
      border-radius:15px;
      color:white;
